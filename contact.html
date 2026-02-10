@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Colin McClusick for AI consulting services. Schedule a free consultation to discuss your business needs.">
+    <title>Contact | Colin McClusick AI Consulting</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">Colin McClusick <span class="logo-accent">AI</span></a>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="btn-primary-nav active">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Let's Talk</h1>
+            <p>Ready to transform your business with AI? Get in touch today.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send Me a Message</h2>
+                    <p>Fill out the form below and I'll get back to you within 24 hours.</p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">I'm interested in...</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="strategy">AI Strategy Consulting</option>
+                                <option value="sales">Sales & Operations Optimization</option>
+                                <option value="automation">Business Process Automation</option>
+                                <option value="implementation">AI Implementation & Training</option>
+                                <option value="other">General Inquiry</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your business and how I can help..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        
+                        <div id="formStatus" class="form-status"></div>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-container">
+                    <div class="contact-info-card">
+                        <h2>Contact Information</h2>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Email</h3>
+                                <a href="mailto:cepm14@gmail.com">cepm14@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>LinkedIn</h3>
+                                <a href="https://www.linkedin.com/in/colinmcclusick/" target="_blank">linkedin.com/in/colinmcclusick</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Schedule a Call</h3>
+                                <p>Book a free 30-minute consultation</p>
+                                <a href="#" class="calendar-link" id="calendarLink">View Calendar</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-card cta-card">
+                        <h3>Free Resources</h3>
+                        <p>Get my free guide: "5 Ways AI Can Transform Your Sales Operations"</p>
+                        <form class="resource-form">
+                            <input type="email" placeholder="Your email" required>
+                            <button type="submit" class="btn btn-primary">Download Now</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <h3>Based in Boston, MA</h3>
+                        <p>Serving clients nationwide with remote consulting services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How quickly can you start?</h3>
+                    <p>I typically begin new projects within 1-2 weeks of our initial consultation, depending on scope and availability.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you work with small businesses?</h3>
+                    <p>Absolutely! I work with businesses of all sizes, from startups to established enterprises. Solutions are tailored to your needs and budget.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What's included in the free consultation?</h3>
+                    <p>A 30-minute video call where we discuss your business challenges, explore potential AI solutions, and determine if we're a good fit to work together.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you offer ongoing support?</h3>
+                    <p>Yes! I offer various support packages to ensure your AI solutions continue to deliver value as your business evolves.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What industries do you work with?</h3>
+                    <p>I work across industries, with particular expertise in sales-driven organizations, service businesses, and companies looking to optimize operations.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do you price your services?</h3>
+                    <p>Each project is unique. After our initial consultation, I'll provide a custom proposal based on scope, timeline, and expected outcomes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Colin McClusick AI</h3>
+                    <p>Transforming businesses through intelligent AI solutions</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="mailto:cepm14@gmail.com">cepm14@gmail.com</a></li>
+                        <li><a href="https://www.linkedin.com/in/colinmcclusick/" target="_blank">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>AI Insights for Business Leaders</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Colin McClusick. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
